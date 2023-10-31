@@ -13,7 +13,6 @@ public class ArraysBasics {
             dalsiPole[i] = (int)(Math.random()*1000+1);
         }
 
-
         System.out.println("Vypis pole:");
         for (int i = 0; i < dalsiPole.length; i++) {
             System.out.print(dalsiPole[i] + " ");
