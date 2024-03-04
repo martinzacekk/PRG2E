@@ -21,9 +21,13 @@ public class Practice {
     //metoda ma jako vstup pocet sekund
     //do konzole vypiste ve formatu mm:ss
     static void timeConvert(int seconds){
-        int minutes = seconds / 60;
-        int remainingSeconds = seconds % 60;
-        System.out.println(minutes + ":" + remainingSeconds);
+//        int hours = seconds / 3600;
+//        int minutes =(seconds-hours*3600) / 60;
+//        int remainingSeconds = (seconds-hours*3600-minutes*60) % 60;
+        int hours = seconds / 3600;
+        int minutes = (seconds % 3600) / 60;
+        int remainingSeconds = (seconds % 3600) % 60;
+        System.out.println(hours + ":" + minutes + ":" + remainingSeconds);
     }
 
     //vygeneruj pole nahodnych cisel od min po max
